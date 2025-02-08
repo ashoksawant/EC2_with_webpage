@@ -1,0 +1,7 @@
+#ignore terrafrom tfstate files and conguration and credential files
+/.t*
+#tfstate
+*.tfstate
+*.backup
+#credentials
+*.env
