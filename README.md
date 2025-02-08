@@ -11,14 +11,14 @@ This Terraform configuration file sets up an AWS EC2 instance with an Apache web
 
 ## Configuration
 Using a .env file can be a good practice for managing environment variables, including sensitive information like AWS access keys and secret keys. Here are some benefits and considerations:
-Create a .env File:
+**Create a .env File:**
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
 AWS_DEFAULT_REGION=your_region
-Using PowerShell:
+**Using PowerShell:**
 Get-Content .env | ForEach-Object { $name, $value = $_ -split '='; [System.Environment]::SetEnvironmentVariable($name.Trim(), $value.Trim(), [System.EnvironmentVariableTarget]::Process) }
-OR
-using (zsh)bash:
+**OR
+using (zsh)bash:**
 source .env
 
 ### Variables
