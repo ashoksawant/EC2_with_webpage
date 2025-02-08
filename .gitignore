@@ -1,7 +1,8 @@
 #ignore terrafrom tfstate files and conguration and credential files
-/.t*
+/.terraform*
+terraform.lock.hcl
 #tfstate
 *.tfstate
-*.backup
+terraform.tfstate.backup
 #credentials
 *.env
